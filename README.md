@@ -6,11 +6,19 @@ _STA Links:_
 * [Link **GitHub**](https://github.com/sta426hs2021/material)
   * GitHub is used for deposition of material.
 
-> "All that you see or seem,
->
->is just a **dream** within a **dream**."
 
 ![Picture](https://hddesktopwallpapers.in/wp-content/uploads/2015/09/chipmunk-picture.jpg)
 
+#Markdown:
+## Gives a header (Number of # correspond to header)  
+**bold**  
+_italic_
+> "All that you see or seem,
+>
+>is just a **dream** within a **dream**."
+1. You 
+2. Can
+3. Make 
+4. A list
 To make a soft break use  
 2 spaces at end of the line!
