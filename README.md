@@ -11,3 +11,6 @@ _STA Links:_
 >is just a **dream** within a **dream**."
 
 ![Picture](https://hddesktopwallpapers.in/wp-content/uploads/2015/09/chipmunk-picture.jpg)
+
+To make a soft break use  
+2 spaces at end of the line!
