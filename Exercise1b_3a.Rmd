@@ -1,6 +1,6 @@
 ---
-title: "Untitled"
-author: "Plotly"
+title: "Exercise 1b Part 3"
+author: "Anja Estermann"
 date: "26 9 2021"
 output: html_document
 ---
@@ -10,28 +10,27 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Generate the sample
-We start sampling 100 values from a log-normal distribution with $\mu=1$ and $\sigma=0.25$:
+100 values from a log-normal distribution($\mu=1$ and $\sigma=0.25$):
 ```{r data}
-data <- rlnorm (100, 1, 25)
+data <- rnorm (100, 1, 0.25)
 ```
 
 ## Plot the histograms
-We now create a histogram of the sampled distribution...
+**Histogram of the sample distribution:**
 ```{r histogram, echo=FALSE}
-hist(data, breaks=15, freq=FALSE, col="orange")
+hist(data, breaks=20, freq=FALSE, col="grey")
 ```
 
-... and a histogram of the same distribution on the log scale:
+**Histogram of the sample distribution in log scale:**
 ```{r log histogram, echo=FALSE}
-hist(log(data), breaks=15, freq=FALSE, col=rainbow(15))
+hist(log(data), breaks=20, freq=FALSE, col="grey")
 ```
 
-## Mean and variance
-At the end we calculate the mean and variance of the sample:
+## Mean and variance of the sample
 ```{r mean and sd}
 m <- mean(data)
 v <- var(data)
 ```
 
-The mean is `r m` and the variance is `r v`.
-© 2021 GitHub, Inc.
+* Mean: `r m`  
+* Variance: `r v`
