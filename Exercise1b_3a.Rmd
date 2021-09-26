@@ -1,0 +1,37 @@
+---
+title: "Untitled"
+author: "Plotly"
+date: "26 9 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Generate the sample
+We start sampling 100 values from a log-normal distribution with $\mu=1$ and $\sigma=0.25$:
+```{r data}
+data <- rlnorm (100, 1, 25)
+```
+
+## Plot the histograms
+We now create a histogram of the sampled distribution...
+```{r histogram, echo=FALSE}
+hist(data, breaks=15, freq=FALSE, col="orange")
+```
+
+... and a histogram of the same distribution on the log scale:
+```{r log histogram, echo=FALSE}
+hist(log(data), breaks=15, freq=FALSE, col=rainbow(15))
+```
+
+## Mean and variance
+At the end we calculate the mean and variance of the sample:
+```{r mean and sd}
+m <- mean(data)
+v <- var(data)
+```
+
+The mean is `r m` and the variance is `r v`.
+© 2021 GitHub, Inc.
